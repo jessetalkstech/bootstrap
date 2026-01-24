@@ -2,34 +2,36 @@
 
 ## High level overview - bootstrap phase 
 1. Install the base operating system using arch install (can we possibly script this step?)
-	1.1 Enable multilib repo
-	1.2 Enable pipewire and bluetooth
+1.1 Enable multilib repo
+1.2 Enable pipewire and bluetooth
 2. Install required utilities 
-	2.1 sudo pacman -S linux-headers base-devel
-	2.2 sudo pacman -S nvidia-open-dkms nvidia-utils lib32-nvidia-utils
-	2.3 sudo pacman -S xorg xorg-xinit
-	2.4 sudo pacman -S git nano pavocontrol stow openssh
+2.1 sudo pacman -S linux-headers base-devel
+2.2 sudo pacman -S nvidia-open-dkms nvidia-utils lib32-nvidia-utils
+2.3 sudo pacman -S xorg xorg-xinit
+2.4 sudo pacman -S git nano pavocontrol stow openssh 
 3. Clone DWM repo (https://git.suckless.org/dwm - todo: build my own repo to manage source code modifications in the future)
-	3.1 CD into dwm
-	3.2 sudo make clean install
+3.1 CD into dwm
+3.2 sudo make clean install
 4. Clone ST repo (https://git.suckless.org/git - todo: see above)
-	4.1 CD into st
-	4.2 sudo make clean install
+4.1 CD into st
+4.2 sudo make clean install
 5. Clone dmenu repo (https://git.suckless.org/dmenu - todo: see dwm)
-	5.1 CD into ~/projects/suckless/dmneu
-	5.2 sudo make clean install
+5.1 CD into ~/projects/suckless/dmneu
+5.2 sudo make clean install
 6. Install SDDM and enable
-	6.1 sudo pacman -S sddm
-	6.2 sudo systemctl enable sddm
-	6.3 cp ~/bootstrap/dwm.desktop /usr/share/xsessions/dwm.desktop
+6.1 sudo pacman -S sddm
+6.2 sudo systemctl enable sddm
+6.3 cp ~/bootstrap/dwm.desktop /usr/share/xsessions/dwm.desktop
 7. Install software packages from repos
-	7.1 sudo pacman -S firefox
+7.1 sudo pacman -S firefox
 8. Install AUR packages
-	8.1 Install yay
-		8.1.1 git clone https://aur.archlinux.org/yay.git ~/projects/yay
-		8.1.2 cd ~/projects/yay
-		8.1.3 makepkg -si
-	8.2 yay -sy zoom iriunwebcam-bin
+8.1 Install yay
+8.1.1 git clone https://aur.archlinux.org/yay.git ~/projects/yay
+8.1.2 cd ~/projects/yay
+8.1.3 makepkg -si
+8.2 yay -S zoom iriunwebcam-bin
+8.3 yay -S neovim-nightly
+8.4 yay -S caffeine
 
 Base Packages:
 1. amd-ucode

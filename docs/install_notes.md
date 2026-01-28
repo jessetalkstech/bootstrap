@@ -8,7 +8,7 @@
 2.1 sudo pacman -S linux-headers base-devel
 2.2 sudo pacman -S nvidia-open-dkms nvidia-utils lib32-nvidia-utils
 2.3 sudo pacman -S xorg xorg-xinit
-2.4 sudo pacman -S git nano pavocontrol stow openssh 
+2.4 sudo pacman -S git nano pavocontrol stow openssh ttf-jetbrains-mono-nerd
 3. Clone DWM repo (https://git.suckless.org/dwm - todo: build my own repo to manage source code modifications in the future)
 3.1 CD into dwm
 3.2 sudo make clean install

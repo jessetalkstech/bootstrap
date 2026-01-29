@@ -4,7 +4,7 @@
 * **WM**: bspwm
 * **Hot Keys**: sxhkd
 * **Bar**: Polybar
-* **Compositor**: picom-ftlabs-git (AUR)
+* **Compositor**: picom
 * **Launcher**: rofi
 * **Idle**: 
   * xssproxy (Automatic inhibition) - AUR
